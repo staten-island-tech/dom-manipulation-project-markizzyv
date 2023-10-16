@@ -1,6 +1,5 @@
 const DOMSelectors = {
     form: document.querySelector("#form")
-    
 } 
 
 
