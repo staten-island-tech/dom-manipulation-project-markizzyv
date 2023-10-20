@@ -11,3 +11,4 @@ DOMSelectors.form.addEventListener("submit", function(event){
         (el)=> el.textContent = DOMSelectors.firstName.value
     );
 }); 
+
