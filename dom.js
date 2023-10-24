@@ -1,5 +1,6 @@
 const DOMSelectors = {
-    form: document.querySelector("#form")
+    form: document.querySelector("#form"),
+    gallery: document.querySelector("card"),
 } 
 
 
