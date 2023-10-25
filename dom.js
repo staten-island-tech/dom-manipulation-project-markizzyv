@@ -3,6 +3,11 @@ const DOMSelectors = {
     gallery: document.querySelector("card"),
 } 
 
+function remove (){
+    DOMSelectors.card.forEach
+        (el)= el.removeButton = DOMSelectors.card.value
+}
+
 
 
 DOMSelectors.form.addEventListener("submit", function(event){
