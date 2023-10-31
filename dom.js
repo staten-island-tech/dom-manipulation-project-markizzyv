@@ -16,6 +16,13 @@ function remove(){
     document.querySelector
 } */
 
+const gallery = function addCard () {
+    DOMSelectors.firstName.h2s
+    document.querySelector.h2s("card-title")
+    DOMSelectors.h2s.addEventListener
+
+}
+
 
 
 
