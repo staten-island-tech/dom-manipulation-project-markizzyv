@@ -1,5 +1,6 @@
 body {
     background-color: azure;
+    text-align: center;
 }
 
 
@@ -16,6 +17,7 @@ form {
     font-size: 25px;
   
     font-family: 'Secular One', sans-serif;
+  
    
 }
 
@@ -23,10 +25,8 @@ input {
     font-size: 15px;
 }
 
-.card {
-    margin: -560px 1000px
-
-   
+.flex-container {
+    display: flex;
 }
 
 
