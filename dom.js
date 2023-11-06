@@ -7,7 +7,8 @@ const DOMSelectors = {
     form: document.querySelector("#form"),
     firstName: document.querySelector(".first-name"),
     h2s: document.querySelectorAll("h2"),
-    imgs: document.querySelector(".card-img")
+    imgs: document.querySelector(".card-img"),
+    //para: document.querySelector(".card-desc")
 
 // grab the text input
 // grab ALL the h2s
@@ -32,33 +33,46 @@ DOMSelectors.form.addEventListener("submit", function(event){
   */
     // one equals for the element text content
 }); 
- DOMSelectors.imgs.addEventListener("submit", function() {
+
+function Image () {
+    DOMSelectors.imgs.addEventListener('click', function(){
+        DOMSelectors.imgs.forEach((imgs)=> imgs.innerHTML = DOMSelectors.imgs.value
+        )
+    });
+}
+
+
+/*  DOMSelectors.imgs.addEventListener("submit", function() {
     DOMSelectors.imgs.forEach((imgs) => {
         imgs.addEventListener("submit", function () {
-            (imgs) => imgs.innerHTML = DOMSelectors.secondName.value
+            (imgs) => imgs.innerHTML = DOMSelectors.imgLink.value
         });
     });
 })
-  
+ */
+/*  DOMSelectors.para.addEventListener("submit", function(){
+    DOMSelectors.para.forEach(
+        (para) => para.innerHTML = DOMSelectors.para.value
+    )
+});  */
 
-/* const addCard 
-const confirm
+const addCard = {
+
+}
+
+/*const confirm
 const clearInput
 */
 
 
-
-
-
-
-const addCard = document.getElementById('gallery');
+/* const addCard = document.getElementById('gallery');
 addCard.DOMSelectors.secondName = document.querySelectors('.card-img')
 addCard.DOMSelectors.h2s(
     (DOMSelectors.firstName) = console.log(addCard) 
 );
+ */
 
-
- const confirmCard = document.getElementById('btn2');
+/*  const confirmCard = document.getElementById('btn2');
 
 confirmCard.addEventListener('click', function() {
     modalContainer.style.display = flex; 
@@ -73,6 +87,8 @@ removeCard.addEventListener('click', function(){
 }); 
  
  
+
+ */
 
 
 
