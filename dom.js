@@ -8,39 +8,51 @@ const DOMSelectors = {
     firstName: document.querySelector(".first-name"),
     h2s: document.querySelectorAll("h2"),
     imgs: document.querySelector(".card-img"),
+    para: document.querySelector(".card-desc"),
+    cardDesc: document.querySelector("p")
     //para: document.querySelector(".card-desc")
 
 // grab the text input
 // grab ALL the h2s
 };
 //no refresh
+
+
+
+
+
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log(DOMSelectors.firstName.value);
     DOMSelectors.h2s.forEach(
         (el)=> el.textContent = DOMSelectors.firstName.value
     );
-  
+    let inputDesc = DOMSelectors.para.value
+    DOMSelectors.cardDesc.insertAdjacentHTML("beforebegin", 
+    `
+    <p>${inputDesc}</p>
+    `)
 
 
-
-
-   /* event.preventDefault()
-    console.log(DOMSelectors.secondName.value); 
-    DOMSelectors.imgs.forEach(
-        (el) => el.textContent = DOM.secondName.value
-    ); 
-  */
-    // one equals for the element text content
 }); 
 
-function Image () {
-    DOMSelectors.imgs.addEventListener('click', function(){
-        DOMSelectors.imgs.forEach((imgs)=> imgs.innerHTML = DOMSelectors.imgs.value
-        )
-    });
-}
 
+
+
+ DOMSelectors.imgs.addEventListener("submit", function(){
+    DOMSelectors.imgs.forEach((imgs)=> imgs.innerHTML = DOMSelectors.imgs.value
+    );
+});
+
+  
+
+/* DOMSelectors.form.addEventListener("submit", function (){
+    DOMSelectors.cardDesc.forEach(
+        (el)=> el.textContent = DOMSelectors.para.value
+    )
+    
+});
+ */
 
 /*  DOMSelectors.imgs.addEventListener("submit", function() {
     DOMSelectors.imgs.forEach((imgs) => {
@@ -56,9 +68,6 @@ function Image () {
     )
 });  */
 
-const addCard = {
-
-}
 
 /*const confirm
 const clearInput
