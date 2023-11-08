@@ -27,11 +27,14 @@ DOMSelectors.form.addEventListener("submit", function(event){
     DOMSelectors.h2s.forEach(
         (el)=> el.textContent = DOMSelectors.firstName.value
     );
-    let inputDesc = DOMSelectors.para.value
+ });
+
+ DOMSelectors.para.addEventListener('click', function () {
+      let inputDesc = DOMSelectors.para.value
     DOMSelectors.cardDesc.insertAdjacentHTML("beforebegin", 
     `
     <p>${inputDesc}</p>
-    `)
+    `);
 
 
 }); 
