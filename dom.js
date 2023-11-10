@@ -10,10 +10,7 @@ const DOMSelectors = {
     imgs: document.querySelector(".card-img"),
     para: document.querySelector(".card-desc"),
     //submitbtn: document.getElementById("submit"),
-    albumnameForm: document.getElementById("first-Name"),
-    albumimgForm: document.getElementById("img"),
-    albumdescForm: document.getElementById("p")
-
+   
     //para: document.querySelector(".card-desc")
 
 // grab the text input
@@ -28,34 +25,8 @@ DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log(DOMSelectors.firstName.value);
 
-  /*    DOMSelectors.h2s.forEach(
-        (el)=> el.textContent = DOMSelectors.firstName.value
-    );
-    let inputDesc = DOMSelectors.para.value
-    DOMSelectors.cardDesc.insertAdjacentHTML("beforebegin", 
-    `
-    <p>${inputDesc}</p>
-    `)
-    let inputIMG = DOMSelectors.imgs.value
-    document.querySelector(".gallery").insertAdjacentHTML("afterbegin", 
-    `
-    <div class="card">
-    <img src ="${inputIMG}"> 
-    ` 
+  
 
-    
-    ); */
-
-    
-function addGallery() {
-const gallery = {
-    inputTitle: DOMSelectors.firstName.value,
-    inputIMG: DOMSelectors.imgs.value,
-    inputDesc: DOMSelectors.para.value,
-
-}
-return gallery
-}
 
 
 
@@ -79,9 +50,6 @@ document.querySelector(".gallery").insertAdjacentHTML("afterbegin",
 
 
 
- 
-
- 
 function remove () {
 const Div = document.getElementById("divgallery");
 const parent = Div.parentNode;
