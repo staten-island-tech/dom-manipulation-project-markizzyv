@@ -11,18 +11,37 @@ h1 {
     font-family: 'Secular One', sans-serif;
 }
 
+p   {
+    font-size: 25px;
+    text-align: center;
+
+}
 
 form {
     
     font-family: 'Secular One', sans-serif;
-  
+    
    
 }
 
 input {
     font-size: 15px;
+    justify-content: space-between;
+
 }
 
+.card {
+    width: 24vw;
+    align-items: center;
+    box-shadow: 10px 10px 6px 7px lightskyblue;
+    justify-content: space-between;
+    background-color: lightblue;
+    border-radius: 25px;
+    margin: 40px 60px;
+    flex-direction: column;
+    display: flex;
+}
+ 
 .gallery {
     display: flex;
     flex-direction: row;
@@ -32,7 +51,24 @@ input {
 
 
 
+.btn{
+    color: red;
+    text-align: center;
+    transition: 0.7s
+}
 
+.btn:hover{
+    transform: scale(1.5);
+    animation: pulse 1s ease-in infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1.2); }
+    to { transform: scale(2.4); }
+    
+  }
+
+    
 
 
 
