@@ -1,6 +1,7 @@
 
 
 
+ 
 
 const DOMSelectors = {
     form: document.querySelector("#form"),
@@ -8,20 +9,25 @@ const DOMSelectors = {
     h2s: document.querySelectorAll("h2"),
     imgs: document.querySelector(".card-img"),
     para: document.querySelector(".card-desc"),
+<<<<<<< HEAD
     gallery: document.querySelector(".gallery"),
     removebtn: document.querySelectorAll(".btn")
 
 
+=======
+    //submitbtn: document.getElementById("submit"),
+   
+    //para: document.querySelector(".card-desc")
+
+// grab the text input
+// grab ALL the h2s
+>>>>>>> parent of 87d27b9 (a)
 };
 
 
-function addCard () {
-
-let inputTitle = DOMSelectors.firstName.value
-let inputImg = DOMSelectors.imgs.value
-let inputDesc = DOMSelectors.para.value
 
 
+<<<<<<< HEAD
 
     document.querySelector(".gallery").insertAdjacentHTML(
        "afterbegin",
@@ -73,6 +79,11 @@ DOMSelectors.form.addEventListener("submit", (event) => {
 });
 =======
 >>>>>>> 9f37062a919bb258643529eecd6d745c90a6efb2
+=======
+DOMSelectors.form.addEventListener("submit", function(event){
+    event.preventDefault();
+    console.log(DOMSelectors.firstName.value);
+>>>>>>> parent of 87d27b9 (a)
 
   
 
@@ -92,7 +103,21 @@ document.querySelector(".gallery").insertAdjacentHTML("afterbegin",
 <p class="card-desc">${inputDesc}</p>
 </div>
 `);
+<<<<<<< HEAD
 >>>>>>> a0d55413bb7ee0508f298667dac7d51744e9b7ca
+=======
+>>>>>>> parent of 87d27b9 (a)
 
-addCard ();
 });
+
+
+
+
+
+function remove () {
+const Div = document.getElementById("divgallery");
+const parent = Div.parentNode;
+parent.removeChild(Div)
+return Div
+}
+
