@@ -49,7 +49,10 @@ input {
     flex-wrap: wrap;
 }
 
-
+.card-img{
+    width:24vw;
+    
+}
 
 .btn{
     color: red;
